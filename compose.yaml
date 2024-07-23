@@ -7,8 +7,8 @@ services:
       context: ./jenkins  # Path to the Jenkins Dockerfile directory
       dockerfile: Dockerfile  # Name of the Dockerfile for Jenkins
       args:
-        GIT_USER_NAME: "NG WEI SHEN JACKSON"  # Replace with your full name
-        GIT_USER_EMAIL: "2202871@sit.singaporetech.edu.sg"  # Replace with your email
+        GIT_USER_NAME: "RYAN RAIDLEY YIAP"  # Replace with your full name
+        GIT_USER_EMAIL: "2201953@sit.singaporetech.edu.sg"  # Replace with your email
     ports:
       - "8080:8080"  # Map host port 8080 to container port 8080 for Jenkins web interface
       - "50000:50000"  # Map host port 50000 to container port 50000 for Jenkins agent communication

@@ -6,7 +6,7 @@ pipeline {
         FLASK_APP = 'workspace/flask/app.py'  // Correct path to the Flask app
         PATH = "$VENV_PATH/bin:$PATH"
         SONARQUBE_SCANNER_HOME = tool name: 'SonarQube Scanner'
-        SONARQUBE_TOKEN = 'squ_88fff5a9de1c8a7d729fb576f4fb6d6e36e86687'  // Set your new SonarQube token here
+        SONARQUBE_TOKEN = 'squ_dec580a4af7f85d26be40317533c23a80d34cc43'  // Set your new SonarQube token here
         DEPENDENCY_CHECK_HOME = '/var/jenkins_home/tools/org.jenkinsci.plugins.DependencyCheck.tools.DependencyCheckInstallation/OWASP_Dependency-Check/dependency-check'
     }
     
@@ -20,7 +20,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 dir('workspace') {
-                    git branch: 'main', url: 'https://github.com/motorfireman/Test.git'
+                    git branch: 'main', url: 'https://github.com/hokshiyokshi/testing123.git'
                 }
             }
         }
